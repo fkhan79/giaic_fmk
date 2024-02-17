@@ -1,0 +1,31 @@
+How to write a basic Hello World Program using Notepad and Typescript(without configuration files)
+
+Tools you need for this exercise:
+1. Notepad
+2. NodeJS must be installed on your system. 
+	Download it from https://nodejs.org/dist/v21.6.2/node-v21.6.2-x64.msi
+3. TypeScript plugin must be installed. Install it using 
+	npm install -g typescript
+4. PowerShell or Command Prompt.
+5. In case of powershell below mentioned command must be executed in Administrator mode
+	a. Go to Search and type PowerShell.
+	b. Right click on PowerShell and select Run in Administator Mode
+	c. Execute Set-ExecutionPolicy RemoteSigned
+6. For this task VSCode is not required. But you can run the same using VSCode as well.
+
+Steps to Perform:
+1. Open Notepad and type the following statements.
+	console.log("Hello TypeScript");
+2. Save the file.
+	a. Enter filename as "HelloTypeScript.ts".
+	b. Save as type, select all files from the dropdown.
+3. Open CommandPrompt or PowerShell.
+4. Navigate to the folder using CD command.
+5. Alternatively you can go to Folder bar and type cmd or powershell and hit enter.
+6  You will automatically be navigated to the designated folder in your desired console.
+7. Run tsc HelloTypeScript.ts
+8. A new file will be created in the same folder as HelloTypeScript.js
+9. Run node HelloTS.js
+10. The console will show Hello TypeScript in the windows.
+11. Your first assignment is completed.
+
