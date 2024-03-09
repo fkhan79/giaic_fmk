@@ -32,10 +32,15 @@
 > + #! /usr/bin/env node
 5. Start coding your application
 
-# Add inquirer to your module for user prompt and input
+# Add inquirer to your module for user prompt and input.
 1. npm i inquirer
 2. npm i @types/inquirer
 
+# Add chalk to your module for console colored outputs.
+1. npm i chalk
+2. npm i @types/chalk
+
+   
 # Creating a working TS Application and NPX package
 1.	Install npx “npm install -g npx”
 2.	Create a new account on https://www.npmjs.com/
