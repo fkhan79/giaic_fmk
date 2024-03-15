@@ -1,6 +1,5 @@
 import inquirer from "inquirer";
 
-
 let name = await inquirer.prompt([
     {
         name: "inputName",
