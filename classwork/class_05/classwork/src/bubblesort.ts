@@ -8,23 +8,22 @@ function bubbleSort(arr: number[]): number[] {
     // Repeat until no more swaps are made
     do {
         // Reset swapped flag to false
-        swapped = false;
-
+        swapped = false;        
         // Iterate through the array
-        for (let i = 0; i < len - 1; i++) {
+        for (let i = 0; i < len - 1; i++) {           
             // Compare adjacent elements
             if (arr[i] > arr[i + 1]) {
                 // If the current element is greater than the next one, swap them
                 const temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
-
+                // Print the swapped elements
+                console.log(`Swapped elements: ${arr[i]} and ${arr[i + 1]}`);                
                 // Set swapped flag to true to indicate that a swap was made
                 swapped = true;
             }
         }
     } while (swapped); // Continue looping until no swaps are made
-
     // Once all elements are in their correct positions, return the sorted array
     return arr;
 }
