@@ -1,0 +1,19 @@
+Consider the following Sequence:
+34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+Write a program that is able to generate a similar sequence using Collatz conjecture.
+
+The Collatz conjecture, also known as the 3n+1 problem or the hailstone sequence, is an unsolved mathematical problem proposed by German mathematician Lothar Collatz in 1937. The conjecture is straightforward to state but has defied rigorous proof or disproof for decades.
+
+The conjecture revolves around a simple iterative process applied to positive integers:
+
+Start with any positive integer 
+define 𝑛
+	If  n is even, divide it by 2 to obtain 𝑛/2
+	If  n is odd, multiply it by 3 and add 1 to obtain 3𝑛+1
+	Repeat this process with the resulting value, generating a sequence of numbers.
+
+The conjecture posits that, regardless of the initial value of  n, iterating through this process will always eventually reach the value 1. In other words, the sequence will always converge to the cycle 
+4→2→1 for any starting value.
+
+Despite its simplicity, the Collatz conjecture remains unsolved. It has been verified empirically for numerous starting values, but a formal proof has not been found. The problem is of interest not only for its mathematical properties but also for its simplicity compared to its elusive solution.
