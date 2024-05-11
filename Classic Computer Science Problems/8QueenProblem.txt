@@ -1,0 +1,59 @@
+The classic 8 Queen Problem is a well-known problem in the field of chessboard puzzles and combinatorial optimization. It asks:
+
+Problem Statement:
+Place 8 queens on an 8x8 chessboard in such a way that no two queens threaten each other. In other words, no two queens should be able to attack each other horizontally, vertically, or diagonally.
+
+Queens attack each other if they are in the same row, column, or diagonal.
+
+The challenge is to find a placement of the 8 queens that satisfies these conditions, or determine if such a placement is impossible.
+
+This problem is interesting because it demonstrates principles of combinatorial search and requires careful consideration of the interplay between the rows, columns, and diagonals of the chessboard. Additionally, the problem has various algorithms and techniques dedicated to solving it efficiently, making it a popular puzzle in computer science and mathematics.
+
+Algorithm for Classic 8 Queen Problem
+
+N = 8  // Size of the chessboard
+
+function solveNQueens(board, col):
+    if col >= N:
+        printBoard(board)
+        return true
+
+    for each row in the column col:
+        if isSafe(board, row, col):
+            placeQueen(board, row, col)
+            if solveNQueens(board, col + 1):
+                return true
+            removeQueen(board, row, col)
+
+    return false
+
+function isSafe(board, row, col):
+    // Check if there's a queen in the same row
+    for i from 0 to col - 1:
+        if board[row][i] == 1:
+            return false
+
+    // Check upper diagonal on left side
+    for i, j from row, col downto 0, 0:
+        if board[i][j] == 1:
+            return false
+
+    // Check lower diagonal on left side
+    for i, j from row, col downto N-1, 0:
+        if board[i][j] == 1:
+            return false
+
+    return true
+
+function placeQueen(board, row, col):
+    board[row][col] = 1
+
+function removeQueen(board, row, col):
+    board[row][col] = 0
+
+function printBoard(board):
+    // Function to print the board configuration
+    // (Not shown for brevity)
+
+board = [[0]*N]*N  // Initialize an empty N x N chessboard
+solveNQueens(board, 0)  // Start solving from the first column
