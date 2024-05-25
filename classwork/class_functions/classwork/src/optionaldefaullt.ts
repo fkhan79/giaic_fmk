@@ -1,11 +1,12 @@
-function greet1(name: string, greeting: string = "Hello"): string {
-    return `${greeting}, ${name}!`;
-}
+// function greet1(name: string, greeting: string = "Hello"): string {
+//     return `${greeting}, ${name}!`;
+// }
 
-console.log(greet1("Alice")); // Output: Hello, Alice!
-console.log(greet1("Bob", "Hi")); // Output: Hi, Bob!
+// console.log(greet1("Alice")); // Output: Hello, Alice!
+// console.log(greet1("Bob", "Hi")); // Output: Hi, Bob!
 
 function greet2(name: string, greeting?: string, punctuation: string = "!"): string {
+    // console.log(greeting)
     if (greeting) {
         return `${greeting}, ${name}${punctuation}`;
     } else {
@@ -13,6 +14,17 @@ function greet2(name: string, greeting?: string, punctuation: string = "!"): str
     }
 }
 
-console.log(greet2("Alice")); // Output: Hello, Alice!
-console.log(greet2("Bob", "Hi")); // Output: Hi, Bob!
-console.log(greet2("Charlie", undefined, ".")); // Output: Hello, Charlie.
+
+
+function greet3(name: string, punctuation: string = "!",  greeting?: string): string {
+    // console.log(greeting)
+    if (greeting) {
+        return `${greeting}, ${name}${punctuation}`;
+    } else {
+        return `Hello, ${name}${punctuation}`;
+    }
+}
+
+console.log(greet3("Alice")); // Output: Hello, Alice!
+console.log(greet3("Bob", "Hi")); // Output: Hi, Bob!
+console.log(greet3("Charlie",undefined, ".")); // Output: Hello, Charlie.

@@ -10,6 +10,7 @@ s.replace(/[^a-zA-Z0-9]/g, ''): This removes all special characters and spaces f
 
     // Remove special characters and spaces, convert to lowercase
     const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    console.log(cleanedStr);
     let len = cleanedStr.length;
     let result = "";
     // Iterate through the characters of the cleaned string in reverse order
@@ -17,6 +18,8 @@ s.replace(/[^a-zA-Z0-9]/g, ''): This removes all special characters and spaces f
         // Build the reversed string by appending characters from the end
         result += cleanedStr[i];
     }
+
+    console.log(result);
     // Check if the reversed string is equal to the original cleaned string
     return result === cleanedStr;
 }
@@ -27,10 +30,15 @@ function PalindromeWithStringFunctions(str:string):boolean{
     //.split('').reverse().join(''): This splits the cleaned string into an array of characters, reverses the order 
     //                           of the array, and then joins the characters back into a single string. This gives 
     //                           us the reversed version of the cleaned string.
+    console.log(cleanedS.split(''), "After split");
+    console.log(cleanedS.split('').reverse(), "After reverse");
+    console.log(cleanedS.split('').reverse().join(''), "After join");
     return cleanedS === cleanedS.split('').reverse().join('');
 }
 
-let val:string="A man, a plan, a canal, Panama!";
+// let val:string="A man, a plan, a canal, Panam!";
+let val:string="Allah dita udas!";
+
 console.log(`The WordPalindrome( "${val}")'s result is:${PalindromeWithLoop(val)}`);
 
 console.log(`The WordPalindrome( "${val}")'s result is:${PalindromeWithStringFunctions(val)}`);

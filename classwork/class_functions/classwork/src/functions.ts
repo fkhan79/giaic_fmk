@@ -37,7 +37,7 @@ function firstElement<Type>(arr: Type[]): Type | undefined {
 }
 
 // Usage examples
-const sum = addNumbers(10, 5); // Named Function
+const sum = addNumbers(10); // Named Function
 console.log(sum);
 const product = multiplyNumbers(10, 5); // Anonymous Function
 console.log(product);
