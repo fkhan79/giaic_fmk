@@ -1,6 +1,6 @@
-# GIAIC TypeScript Node JS Assignments Repository
+# GIAIC TypeScript Node.js Assignments Repository
 
-## Node must be install prior to these steps. Check online for installation steps for your choice of OS
+## Node must be installed prior to these steps. Check online for installation steps for your choice of OS.
 
 ## If you want to run TypeScript `tsc` command in Windows Powershell
 
@@ -84,6 +84,6 @@ npm link
 ```
 
 5. After successful execution, prepare it to move it to npm registry to be available to everyone using npx command.
-   1. Login to npm remotely using `npm login`.
-   1. After a successful login, run `npm publish`. This will upload the newly built package to npm registry using your provided credentials.
-   1. Try testing is using command using `npx <module_name>`.
+    1. Login to npm remotely using `npm login`.
+    2. After a successful login, run `npm publish`. This will upload the newly built package to npm registry using your provided credentials.
+    3. Try testing it using `npx <module_name>`.
