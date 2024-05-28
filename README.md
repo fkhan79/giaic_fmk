@@ -55,7 +55,7 @@ npm install -g typescript
 #! /usr/bin/env node
 ```
 
-1. Start coding your application.
+3. Start coding your application.
 
 ## Add `inquirer` to your project for user prompt and input
 
