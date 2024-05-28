@@ -51,7 +51,7 @@ npm install -g typescript
 1. Create a new `.ts` file under `src` folder.
 1. Add the following line at tha start of your main ts file, if you are intended to use the package as a self executable npm package.
 
-```bash
+```
 #! /usr/bin/env node
 ```
 
