@@ -45,3 +45,29 @@ console.log(initial); // Prints 8
 let initialPrefix = 5;
 console.log(++initialPrefix); // Output: 6
 console.log(initialPrefix); // Output: 6
+
+//Scenario
+//Suppose we are building a shopping cart application, and we want to calculate the total cost of items in the cart after applying a discount.
+
+// Shopping cart scenario
+let itemPrice: number = 25;
+let quantity: number = 3;
+let discountPercentage: number = 10;
+
+// Calculate total cost before discount
+let totalBeforeDiscount: number = itemPrice * quantity;
+console.log("Total before discount: $" + totalBeforeDiscount);
+
+// Calculate discount amount
+let discountAmount: number = (totalBeforeDiscount * discountPercentage) / 100;
+console.log("Discount amount: $" + discountAmount);
+
+// Calculate total cost after discount
+let totalAfterDiscount: number = totalBeforeDiscount - discountAmount;
+console.log("Total after discount: $" + totalAfterDiscount);
+
+
+
+
+
+
