@@ -15,16 +15,11 @@ class Rectangle {
     // Getter for the height property
     get height(): number {
       return this._height;
-    }
-  
-    // Getter for the area property
-    get area(): number {
-      return this._width * this._height;
-    }
+    }  
+   
   }
   
   const rect = new Rectangle(5, 10);
   console.log(rect.width); // Output: 5
   console.log(rect.height); // Output: 10
-  console.log(rect.area); // Output: 50
   
