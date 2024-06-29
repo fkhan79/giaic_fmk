@@ -1,31 +1,39 @@
-// Example 1: Copying an array
-const numbers = [1, 2, 3];
-const copiedNumbers = [...numbers];
-console.log(copiedNumbers);  // Output: [1, 2, 3]
-// Example 2: Merging arrays
-const moreNumbers = [4, 5, 6];
-const mergedNumbers = [...numbers, ...moreNumbers];
-console.log(mergedNumbers);  // Output: [1, 2, 3, 4, 5, 6]
+// // Example 1: Copying an array
+// const numbers = [1, 2, 3];
+// const copiedNumbers = [...numbers];
+// console.log(copiedNumbers);  // Output: [1, 2, 3]
+// // Example 2: Merging arrays
+// const moreNumbers = [4, 5, 6];
+// const mergedNumbers = [...numbers, ...moreNumbers];
+// console.log(mergedNumbers);  // Output: [1, 2, 3, 4, 5, 6]
 
 
-//Example 4.1
-function sumArray(a: number, b: number, c: number): number {
-    return a + b + c;
-}
+// //Example 4.1
+// function sumArray(a: number, b: number, c: number): number {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
 
-let numbersArray: number[] = [1, 2, 3];
-let result = sumArray(...numbersArray);
+//     return a + b + c;
+// }
 
-console.log(result);  // Output: 6
+// let numbersArray: number[] = [10, 7, 5,2];
+// console.log(numbersArray, "numbersArray");
+// let result = sumArray(...numbersArray);
+
+// console.log(result);  // Output: 6
 
 //Example 4.2: Rest operator using Spread
-function sumUsingRest(...numbers: number[]): number {
-    return numbers.reduce((acc, curr) => acc + curr, 0);
-}
+// function sumUsingRest(...numbers: number[]): number {
+//     return numbers.reduce((sum, curr) => {
+//         console.log(sum, "sum", curr, "curr");
+//         return sum + curr
+//     }, 0);
+// }
 
-numbersArray = [1, 2, 3, 4, 5];
-result = sumUsingRest(...numbersArray);
-console.log(result);  // Output: 15
+// numbersArray = [1, 2, 3, 4, 5];
+// result = sumUsingRest(...numbersArray);
+// console.log(result);  // Output: 15
 
 // Example 5: Copying an object
 const person = { name: "Alice", age: 30 };
